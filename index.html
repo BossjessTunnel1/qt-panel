@@ -370,11 +370,11 @@
 
     <script>
         // === CONFIGURATION (UPDATED) ===
-        const REPO = "bossjesstunnel1.github.io/qt-panel";
+        const REPO = "BossjessTunnel1/qt-panel";
         const TOKEN = "sha256:c080db2c84c74d0c61aeed60c88d3b6dd4d03e9034c6fe5cb67d9a6b29a34155"; 
         const FILE = "Key.json";
         const BRANCH = "main";
-        const API = `https://gitlab.com/api/v4/projects/${encodeURIComponent(REPO)}/repository/files/${encodeURIComponent(FILE)}`;
+        const API = `https://raw.githubusercontent.com/${encodeURIComponent(REPO)}/refs/heads/main/${encodeURIComponent(FILE)}`;
         
         // A very distant future timestamp (used to push Lifetime/Duration keys to the bottom of the expiry sort)
         const LIFETIME_TS = 99999999999999; 
